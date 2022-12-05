@@ -33,6 +33,8 @@ Instructions
 
    * ``.github/ISSUE TEMPLATE`` contains default issue templates that Moe uses. At a minimum, you need to change the url in ``config.yml`` to link to your repository's discussions.
 
+     * You must also enable 'Discussions' in your repository settings in order for the referenced link to work.
+
    * Edit the ``SLUG`` constant in ``.github/scripts/prep_release.py`` to be your repository.
 
 #. Setup documentation on `Read the Docs <https://readthedocs.org/>`_.
