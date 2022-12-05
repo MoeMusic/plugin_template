@@ -52,6 +52,16 @@ Instructions
 
    * Add ``PYPI_USERNAME`` and ``PYPI PASSWORD`` secrets to the repository with your PyPI username and password. These will be used by the CI for the release process.
 
+#. Edit plugin information.
+
+   * Edit the repository "About" section on github
+
+     * Ensure to add your documentation link to the ``Website`` section.
+
+   * Edit ``README.rst``
+
+   * Edit ``docs/index.rst``
+
 #. Edit repository "About" information.
 
    * Ensure to add your documentation link to the ``Website`` section.
