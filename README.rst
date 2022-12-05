@@ -46,7 +46,7 @@ Instructions
      * This is the site used to host your documentation.
 
    .. note::
-       This step is optional if you are not providing any new API functions with your plugin. In that case, you may remove the ``docs`` repository as well as the ``.readthedocs.yml`` file.
+       This step is optional if you are not providing any new API functions with your plugin. In that case, you may remove the ``docs`` directory as well as the ``.readthedocs.yml`` file.
 
 #. Setup repository settings.
 
