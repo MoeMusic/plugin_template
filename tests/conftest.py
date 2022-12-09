@@ -1,7 +1,6 @@
 """Shared pytest configuration."""
 
 import datetime
-import importlib
 import random
 import shutil
 import sys
