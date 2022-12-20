@@ -39,14 +39,22 @@ Instructions
 
 #. Setup documentation on `Read the Docs <https://readthedocs.org/>`_.
 
+   .. note::
+       This step is optional if you are not providing any new API functions with your plugin. In that case, you may remove the ``docs`` directory as well as the ``.readthedocs.yml`` file.
+
    * Edit ``docs/conf.py`` project information.
 
    * `Import your repository into Read the Docs <https://readthedocs.org/dashboard/import/?>`_.
 
      * This is the site used to host your documentation.
 
-   .. note::
-       This step is optional if you are not providing any new API functions with your plugin. In that case, you may remove the ``docs`` directory as well as the ``.readthedocs.yml`` file.
+   * Setup webhook integration on github.
+
+     * Github project settings -> Webhooks -> Add webhook
+
+       * Paste the payload URL found at ReadTheDocs project -> Admin -> Integrations
+
+       * Select individual events [Branch or tag creation, Pull requests, Pushes]
 
 #. Setup repository settings.
 
