@@ -48,17 +48,13 @@ Instructions
 
      * This is the site used to host your documentation.
 
-   * Setup webhook integration on github.
+   * Configure your project to build docs on pull requests.
 
-     * Github project settings -> Webhooks -> Add webhook
+     * Readthedocs project -> Admin -> Settings
 
-       * Paste the payload URL found at ReadTheDocs project -> Admin -> Integrations
+       * Check the box in the settings to build pull requests.
 
-       * Select individual events [Branch or tag creation, Pull requests, Pushes]
-
-#. Setup repository settings.
-
-   * Add ``PYPI_USERNAME`` and ``PYPI PASSWORD`` secrets to the repository with your PyPI username and password. These will be used by the CI for the release process.
+   * Edit the ``project-slug`` in ``.github/workflows/preview_docs.yml`` to be your readthedocs project slug.
 
 #. Edit plugin information.
 
@@ -70,9 +66,19 @@ Instructions
 
    * Edit ``docs/index.rst``
 
+#. Setup PyPI publishing.
+
+   * In your PyPI account, add the `release.yml` github action as a `trusted publisher <https://docs.pypi.org/trusted-publishers/adding-a-publisher/>`_.
+
 #. Edit repository "About" information.
 
    * Ensure to add your documentation link to the ``Website`` section.
+
+#. Optional: Setup code coverage reports in pull requests.
+
+   * `Connect the repository with Codecov <https://docs.codecov.com/docs/github-2-getting-a-codecov-account-and-uploading-coverage>`_.
+
+   * Add the ``CODECOV_TOKEN`` secret to the repository.
 
 #. Once finished, commit your changes and create a ``v0.1.0`` tag. Then, push your changes with the new tag.
 
