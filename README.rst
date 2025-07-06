@@ -1,3 +1,8 @@
+#######
+WARNING
+#######
+This repository is no longer kept up to date.
+
 ###############
 Plugin Template
 ###############
